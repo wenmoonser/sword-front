@@ -33,6 +33,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
+  margin-top: auto;
 `
 
 const ToggleWrapper = styled.div`

@@ -148,7 +148,7 @@ const AddMartianCard = () => {
 
     setAddMartianDisabled(true)
 
-    const tokenSymbol = 'MARTIAN'
+    const tokenSymbol = 'ADR'
     const tokenDecimals = 18
     const tokenImage = `${process.env.REACT_APP_BASE_URL}/images/egg/9.png`
 
@@ -176,13 +176,12 @@ const AddMartianCard = () => {
     <Card>
       <CardBody>
         <Heading size="lg" mb="24px" style={{ textAlign: 'center' }}>
-          {TranslateString(10015, 'Add MARTIAN')}
+          {TranslateString(10015, 'Add ADR')}
         </Heading>
         <div style={{ textAlign: 'center' }}>
-          <AddMartianIcon src="/images/add_martian.png" alt="add martian logo" />
+          <AddMartianIcon src="/images/add_martian.png" alt="add logo" />
         </div>
         <TokenWrapper>
-          <CardImage src="/images/farms/mrt.png" alt="martian logo" />
           <TokenAddressWrapper>
             <p>{TranslateString(10016, 'Token Address')}</p>
             <TokenAccountWrapper>
@@ -209,24 +208,18 @@ const AddMartianCard = () => {
         <ActionsButtonWrapper>
           <div>
             <Button variant="primary" disabled={addMartianDisabled} onClick={handleAddMartian}>
-              {TranslateString(10017, 'Add $MARTIAN to')}&nbsp;
+              {TranslateString(10017, 'Add $ADR to')}&nbsp;
               <ButtonIcon src="/images/metamask.png" alt="metamask logo" />
             </Button>
           </div>
           <BuyWrapper style={{ textAlign: 'center' }}>
             <Link external href={`https://exchange.pancakeswap.finance/#/swap?outputCurrency=${tokenAddress}`}>
               <Button variant="primary">
-                {TranslateString(10018, 'Buy $MARTIAN token')}&nbsp;
+                {TranslateString(10018, 'Buy $ADR token')}&nbsp;
                 <ButtonIcon src="/images/pancake.png" alt="pancake logo" />
               </Button>
             </Link>
-            <p>* {TranslateString(10019, 'Remember set Slippage to 5')}%,</p>
-            <Link
-              external
-              href="https://martianswap.gitbook.io/martianswap/getting-started/how-to-purchase-usdmartian-tokens"
-            >
-              {TranslateString(10020, 'Guide here')}
-            </Link>
+            <p style={{ paddingTop: '5px' }}>{TranslateString(10019, 'Remember set Slippage to at least 5')}%</p>
           </BuyWrapper>
         </ActionsButtonWrapper>
       </CardBody>

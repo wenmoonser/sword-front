@@ -2,6 +2,7 @@ import React, { useEffect, useCallback, useState } from 'react'
 import { Route, useRouteMatch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
+import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
 import { Image, Heading } from '@pancakeswap-libs/uikit'
@@ -20,6 +21,21 @@ import Divider from './components/Divider'
 export interface FarmsProps {
   tokenMode?: boolean
 }
+
+const Header = styled.div`
+  align-items: center;
+  background-image: url('/images/egg/farm_banner.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  height: 60vh;
+  background-size: cover;
+`
 
 const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const { path } = useRouteMatch()
@@ -93,22 +109,17 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <div style={{ textAlign: 'center' }}>
-        <img
-          src={path === '/farms' ? '/images/egg/8.png' : '/images/egg/8b.png'}
-          alt="illustration"
-          style={{ width: '200px', height: 'auto' }}
-        />
-      </div>
-      <Heading as="h1" size="lg" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
-        {tokenMode
-          ? TranslateString(10002, 'Stake tokens to earn MRT')
-          : TranslateString(320, 'Stake LP tokens to earn MRT')}
-      </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fees will be used to reward MARTIAN holders')}
-      </Heading>
-      <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
+      <Header style={{ textAlign: 'center' }}>
+        <Heading as="h1" size="lg" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
+          {tokenMode
+            ? TranslateString(10002, 'Stake tokens to earn ADR')
+            : TranslateString(320, 'Stake LP tokens to earn ADR')}
+        </Heading>
+        <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+          {TranslateString(10000, 'Deposit Fees will be used to reward ADR holders')}
+        </Heading>
+        <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
+      </Header>
       <div>
         <Divider />
         <FlexLayout>

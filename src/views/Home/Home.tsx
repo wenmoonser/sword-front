@@ -17,22 +17,28 @@ const Hero = styled.div`
   align-items: center;
   background-image: url('/images/egg/3.png');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center bottom;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 32px;
-  padding-top: 116px;
+  padding-top: 20px;
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/FN-animation.svg');
-    background-position: left center, right center, center center;
-    height: 316px;
-    padding-top: 0;
+    background-image: url('/images/egg/header.png');
+    background-position: center bottom;
+    height: calc(100vh - 64px);
     background-size: cover;
-    border-radius: 32px;
+  }
+  
+`
+
+const CustomHeading = styled(Heading)`
+  font-family: 'Bangers', cursive;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    font-size: 128px;
   }
 `
 
@@ -104,40 +110,31 @@ const Home: React.FC = () => {
 
   return (
     <Page>
-      <div className="hero-header">
-        <Heading as="h1" size="xl" mb="10px" color="primary">
-          {TranslateString(576, 'Martian Finance')}
-        </Heading>
-        <Text fontSize="15px">
-          {TranslateString(578, 'Automatic Liquidity Acquisition Yield Farm & AMM on Binance Smart Chain')}
-        </Text>
 
-        <ComingSoonWrapper>
-          <Text fontSize="3rem" color="primary" style={{ textDecoration: 'underline', fontWeight: 'bold' }}>
-            $Martian Token Has Launched!
-          </Text>
-        </ComingSoonWrapper>
-      </div>
       <Hero>
-        <p>{}</p>
+        <CustomHeading as="h1" size="xl" mb="10px" color="primary" >
+          {TranslateString(576, 'Andromeda Finance')}
+        </CustomHeading>
+        <Text fontSize="15px">
+          {TranslateString(578, 'Automatic Liquidity Acquisition Yield Farm on Binance Smart Chain')}
+        </Text>
+        <Text fontSize="15px" style={{ marginTop: 'auto', marginBottom: '20px' }}>
+          Scroll down for more
+        </Text>
       </Hero>
-      <div>
-        <CardsFullWidth>
-          <CardBody style={{ padding: 0 }}>
-            <AddMartianCard />
-          </CardBody>
-        </CardsFullWidth>
+      <div style={{ padding: '32px' }}>
         <Cards>
           <CardBody style={{ padding: 0 }}>
-            <FarmStakingCard />
+            <AddMartianCard />
             <br />
-            <CakeStats />
+            <FarmStakingCard />
           </CardBody>
-
           <CardBody style={{ padding: 0 }}>
-            <TwitterCard />
+            <CakeStats />
             <br />
             <TotalValueLockedCard />
+            <br />
+            <TwitterCard />
           </CardBody>
         </Cards>
       </div>

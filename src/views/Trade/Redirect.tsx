@@ -65,7 +65,7 @@ const Redirect: React.FC = () => {
       <br />
       <p>
         Please remember to adjust your slippage to 6% to account for our{' '}
-        <Link external href="https://martianswap.gitbook.io/martianswap/tokenomics/martian#transfer-tax">
+        <Link external href="/">
           transfer tax.
         </Link>
       </p>

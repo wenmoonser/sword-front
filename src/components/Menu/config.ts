@@ -14,11 +14,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: '/trade?p=exchange',
+        href: 'https://exchange.pancakeswap.finance/#/swap',
       },
       {
         label: 'Liquidity',
-        href: '/trade?p=liquidity',
+        href: 'https://exchange.pancakeswap.finance/#/pool',
       },
     ],
   },
@@ -38,21 +38,16 @@ const config: MenuEntry[] = [
     href: '/referrals',
   },
   {
-    label: 'Audits (In Progress)',
-    icon: 'AuditIcon',
-    href: '',
-  },
-  {
     label: 'Price Chart',
     icon: 'ChartIcon',
     items: [
       {
         label: 'PooCoin',
-        href: `https://poocoin.app/tokens/${tokenAddress}`,
+        href: ``,
       },
       {
         label: 'BoggedFinance',
-        href: `https://charts.bogged.finance/?token=${tokenAddress}`,
+        href: ``,
       },
     ],
   },
@@ -62,27 +57,23 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Transfer Tax',
-        href: 'https://martianswap.gitbook.io/martianswap/tokenomics/martian',
+        href: '',
       },
       {
         label: 'Auto Burn',
-        href: 'https://martianswap.gitbook.io/martianswap/tokenomics/auto-burn-mechanism',
+        href: '',
       },
       {
         label: 'Auto LP',
-        href: 'https://martianswap.gitbook.io/martianswap/tokenomics/auto-liquidity-mechanism',
+        href: '',
       },
       {
         label: 'Harvesting Time Lock',
-        href: 'https://martianswap.gitbook.io/martianswap/tokenomics/harvest-time-lock',
+        href: '',
       },
       {
         label: 'Anti Whale Measures',
-        href: 'https://martianswap.gitbook.io/martianswap/tokenomics/mitigate-pump-and-dumps',
-      },
-      {
-        label: 'UFO Airdrops',
-        href: 'https://martianswap.gitbook.io/martianswap/tokenomics/ufo-airdrops',
+        href: '',
       },
     ],
   },
@@ -92,11 +83,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'BscScan',
-        href: `https://bscscan.com/token/${tokenAddress}`,
+        href: ``,
       },
       {
         label: 'PooCoin.app',
-        href: `https://poocoin.app/tokens/${tokenAddress}`,
+        href: ``,
       },
       {
         label: 'DappRadar (comingsoon)',
@@ -113,25 +104,20 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Analytics (Coming Soon)',
-    icon: 'InfoIcon',
-    href: '',
-  },
-  {
     label: 'More',
     icon: 'MoreIcon',
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/martiandefi',
+        href: '',
       },
       {
         label: 'Docs',
-        href: 'https://martianswap.gitbook.io/',
+        href: '',
       },
       {
         label: 'Roadmap',
-        href: 'https://martianswap.gitbook.io/martianswap/roadmap-1',
+        href: '',
       },
     ],
   },

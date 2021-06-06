@@ -17,12 +17,6 @@ const Wrapper = styled(Flex)`
     margin-right: 0.25rem;
   }
 
-  [src*='martian-busd'],
-  [src*='martian-bnb'],
-  [src*='bnb-busd'] {
-    width: 80%;
-    height: auto;
-  }
 `
 
 const MultiplierTag = styled(Tag)`

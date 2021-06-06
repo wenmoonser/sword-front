@@ -43,7 +43,7 @@ const ReferralCard: React.FC = () => {
 
         <Card className={styles.card}>
           <CardBody>{TranslateString(10009, 'Total Referral Commissions')}</CardBody>
-          <CardFooter>{totalReferralCommisions} Martian</CardFooter>
+          <CardFooter>{totalReferralCommisions} ADR</CardFooter>
         </Card>
       </Flex>
 

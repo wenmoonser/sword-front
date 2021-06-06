@@ -127,7 +127,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     : '-'
 
   const lpLabel = farm.lpSymbol
-  const earnLabel = 'MARTIAN'
+  const earnLabel = 'ADR'
   const farmAPY =
     farm.apy &&
     farm.apy.times(new BigNumber(100)).toNumber().toLocaleString(undefined, {
@@ -156,7 +156,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
 
   return (
     <FCard>
-      {farm.tokenSymbol === 'MRT' && <StyledCardAccent />}
+      {farm.tokenSymbol === 'ADR' && <StyledCardAccent />}
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
@@ -221,6 +221,14 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       )}
       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
       <Divider />
+    </FCard>
+  )
+}
+
+export default FarmCard
+
+/*
+
       <ExpandableSectionButton
         onClick={() => setShowExpandableSection(!showExpandableSection)}
         expanded={showExpandableSection}
@@ -241,8 +249,5 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
           tokenAddresses={tokenAddresses}
         />
       </ExpandingWrapper>
-    </FCard>
-  )
-}
 
-export default FarmCard
+*/

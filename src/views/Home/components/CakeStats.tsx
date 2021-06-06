@@ -45,7 +45,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'MRT Stats')}
+          {TranslateString(534, 'ADR Stats')}
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(10005, 'Market Cap')}</Text>
@@ -74,7 +74,7 @@ const CakeStats = () => {
           {maxTxAmount && <CardValue fontSize="14px" value={getBalanceNumber(maxTxAmount)} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New MRT/block')}</Text>
+          <Text fontSize="14px">{TranslateString(540, 'New ADR/block')}</Text>
           <Text bold fontSize="14px">
             {martianPerBlock}
           </Text>

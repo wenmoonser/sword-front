@@ -115,9 +115,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
             ? TranslateString(10002, 'Stake tokens to earn ADR')
             : TranslateString(320, 'Stake LP tokens to earn ADR')}
         </Heading>
-        <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-          {TranslateString(10000, 'Deposit Fees will be used to reward ADR holders')}
-        </Heading>
         <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       </Header>
       <div>

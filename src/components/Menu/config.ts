@@ -113,11 +113,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: '',
+        href: 'https://andromedadefi.gitbook.io/andromeda-finance/',
       },
       {
-        label: 'Roadmap',
-        href: '',
+        label: 'Blog',
+        href: 'https://andromedadefi.medium.com/',
       },
     ],
   },

@@ -40,7 +40,7 @@ const TokenAccount = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   width: 40%;
-  color: #7dcc32;
+  color: #F6386A;
   margin-left: 10px;
 
   @media only screen and (min-width: 375px) {

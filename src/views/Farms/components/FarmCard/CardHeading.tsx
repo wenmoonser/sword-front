@@ -21,7 +21,7 @@ const Wrapper = styled(Flex)`
 
 const MultiplierTag = styled(Tag)`
   margin-left: 4px;
-  background-color: #F6386A;
+  background-color: #0080FF;
   border: 1px solid #fff;
 `
 

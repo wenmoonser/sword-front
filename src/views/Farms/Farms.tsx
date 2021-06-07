@@ -33,8 +33,12 @@ const Header = styled.div`
   margin: auto;
   padding-top: 20px;
   text-align: center;
-  height: 60vh;
   background-size: cover;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    height: 60vh;
+  }
+  
 `
 
 const Farms: React.FC<FarmsProps> = (farmsProps) => {

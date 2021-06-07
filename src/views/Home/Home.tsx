@@ -24,6 +24,7 @@ const Hero = styled.div`
   margin: auto;
   padding-top: 20px;
   text-align: center;
+  background-size: cover;
 
   ${({ theme }) => theme.mediaQueries.lg} {
     background-image: url('/images/egg/header.png');

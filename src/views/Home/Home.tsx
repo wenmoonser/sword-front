@@ -15,7 +15,7 @@ import AddMartianCard from './components/AddMartianCard'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/egg/3.png');
+  background-image: url('/images/egg/header.png');
   background-repeat: no-repeat;
   background-position: center bottom;
   display: flex;
@@ -62,6 +62,14 @@ const Cards = styled(BaseLayout)`
     & > div {
       grid-column: span 6;
     }
+  }
+`
+
+const ScrollText = styled(Text)`
+  display: none;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    display: block;
   }
 `
 
@@ -118,9 +126,9 @@ const Home: React.FC = () => {
         <Text fontSize="15px">
           {TranslateString(578, 'Automatic Liquidity Acquisition Yield Farm on Binance Smart Chain')}
         </Text>
-        <Text fontSize="15px" style={{ marginTop: 'auto', marginBottom: '20px' }}>
+        <ScrollText fontSize="15px" style={{ marginTop: 'auto', marginBottom: '20px' }}>
           Scroll down for more
-        </Text>
+        </ScrollText>
       </Hero>
       <div style={{ padding: '32px' }}>
         <Cards>

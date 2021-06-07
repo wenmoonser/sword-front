@@ -40,16 +40,7 @@ const config: MenuEntry[] = [
   {
     label: 'Price Chart',
     icon: 'ChartIcon',
-    items: [
-      {
-        label: 'PooCoin',
-        href: ``,
-      },
-      {
-        label: 'BoggedFinance',
-        href: ``,
-      },
-    ],
+    href: ''
   },
   {
     label: 'Features',
@@ -82,11 +73,15 @@ const config: MenuEntry[] = [
     icon: 'ListIcon',
     items: [
       {
-        label: 'BscScan',
+        label: 'Coinsniper (comingsoon)',
         href: ``,
       },
       {
-        label: 'PooCoin.app',
+        label: 'Coinhunt (comingsoon)',
+        href: ``,
+      },
+      {
+        label: 'PooCoin (comingsoon)',
         href: ``,
       },
       {
@@ -109,7 +104,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: '',
+        href: 'https://github.com/andromedafinance',
       },
       {
         label: 'Docs',

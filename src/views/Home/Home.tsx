@@ -112,7 +112,7 @@ const Home: React.FC = () => {
     <Page>
 
       <Hero>
-        <CustomHeading as="h1" size="xl" mb="10px" color="primary" >
+        <CustomHeading as="h1" size="xl" mb="10px" style={{ color: '#FF0080', textShadow: '3px 3px 2px #fff' }}>
           {TranslateString(576, 'Andromeda Finance')}
         </CustomHeading>
         <Text fontSize="15px">

@@ -25,8 +25,8 @@ const ClaimAction: React.FC = () => {
 
   return (
     <Flex justifyContent="space-between" alignItems="center" flexDirection="column">
-      You can only claim after presale is over!
       {renderStakingButtons()}
+      <div style={{ paddingTop: '20px' }}>You can only claim after presale is over!</div>
     </Flex>
   )
 }

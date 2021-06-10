@@ -25,7 +25,7 @@ const config: MenuEntry[] = [
   {
     label: 'Presale',
     icon: 'TicketIcon',
-    href: '/presale ',
+    href: '/presale',
   },
   {
     label: 'Farms',

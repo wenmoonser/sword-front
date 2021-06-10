@@ -107,3 +107,21 @@ export const soushHarvestBnb = async (sousChefContract, account) => {
       return tx.transactionHash
     })
 }
+
+export const buy = async (presaleContract, amount, account) => {
+  return presaleContract.methods
+    .buy(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(), account)
+    .send({ from: account })
+    .on('transactionHash', (tx) => {
+      return tx.transactionHash
+    })
+}
+
+export const claim = async (presaleContract, account) => {
+  return presaleContract.methods
+    .claimTokens(account)
+    .send({ from: account })
+    .on('transactionHash', (tx) => {
+      return tx.transactionHash
+    })
+}

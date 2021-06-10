@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { FarmConfig, PoolConfig, ReferralConfig } from 'config/constants/types'
+import { FarmConfig, PoolConfig, ReferralConfig, PresaleConfig } from 'config/constants/types'
 
 export interface Farm extends FarmConfig {
   tokenAmount?: BigNumber
@@ -32,6 +32,8 @@ export interface Pool extends PoolConfig {
 
 export type Referral = ReferralConfig
 
+export type Presale = PresaleConfig
+
 // Slices states
 
 export interface FarmsState {
@@ -46,10 +48,15 @@ export interface ReferralsState {
   data: Referral
 }
 
+export interface PresaleState {
+  data: Presale
+}
+
 // Global state
 
 export interface State {
   farms: FarmsState
   pools: PoolsState
   referrals: ReferralsState
+  presale: PresaleState
 }

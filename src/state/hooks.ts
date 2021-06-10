@@ -8,8 +8,10 @@ import {
   fetchPoolsUserDataAsync,
   fetchTotalReferralsDataAsync,
   fetchTotalReferralCommissionsDataAsync,
+  fetchTokensLeftDataAsync,
+  fetchUserTokensUnclaimedDataAsync
 } from './actions'
-import { State, Farm, Pool, Referral } from './types'
+import { State, Farm, Pool, Referral, Presale } from './types'
 import { QuoteToken } from '../config/constants/types'
 
 const ZERO = new BigNumber(0)
@@ -127,4 +129,11 @@ export const useReferrals = (account): Referral => {
 
   const referrals = useSelector((state: State) => state.referrals.data)
   return referrals
+}
+
+// Referrals
+
+export const usePresaleData = (): Presale => {
+  const presale = useSelector((state: State) => state.presale.data)
+  return presale
 }

@@ -23,6 +23,11 @@ const config: MenuEntry[] = [
     ],
   },
   {
+    label: 'Presale',
+    icon: 'TicketIcon',
+    href: '/presale ',
+  },
+  {
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',

@@ -1,0 +1,40 @@
+.cardContainer {
+	flex-direction: column;
+}
+
+.card {
+	width: 100%;
+}
+
+.card:last-child {
+	margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+	flex-flow: column nowrap;
+}
+
+.item {
+	margin-top: 10px;
+}
+
+.colored {
+	color: #0080FF;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+@media only screen and (min-width: 769px) {
+	.cardContainer {
+		flex-direction: row;
+	}
+
+	.card {
+		width: 49%;
+	}
+
+	.card:last-child {
+		margin-top: 0;
+	}
+}

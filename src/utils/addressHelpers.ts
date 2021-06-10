@@ -14,6 +14,9 @@ export const getMulticallAddress = () => {
 export const getWbnbAddress = () => {
   return addresses.wbnb[chainId]
 }
+export const getBusdAddress = () => {
+  return addresses.busd[chainId]
+}
 export const getLotteryAddress = () => {
   return addresses.lottery[chainId]
 }
@@ -23,3 +26,7 @@ export const getLotteryTicketAddress = () => {
 export const getReferralAddress = () => {
   return addresses.referral[chainId]
 }
+export const getPresaleAddress = () => {
+  return addresses.presale[chainId]
+}
+

@@ -7,7 +7,6 @@ import { useFetchPublicData } from 'state/hooks'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import PageLoader from './components/PageLoader'
-import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
 
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page'
@@ -19,6 +18,7 @@ const Trade = lazy(() => import('./views/Trade'))
 // const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
+const Presale = lazy(() => import('./views/Presale'))
 // const Nft = lazy(() => import('./views/Nft'))
 
 // This config is required for number formating
@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }
   }, [account, connect])
 
-  useFetchPublicData()
+  // useFetchPublicData()
 
   return (
     <Router>
@@ -58,6 +58,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/referrals">
               <Referrals />
+            </Route>
+            <Route path="/presale">
+              <Presale />
             </Route>
             {/* <Route path="/pools"> */}
             {/*  <Pools /> */}
@@ -83,9 +86,28 @@ const App: React.FC = () => {
           </Switch>
         </Suspense>
       </Menu>
-      <NftGlobalNotification />
     </Router>
   )
 }
 
 export default React.memo(App)
+
+/*
+
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/trade">
+              <Trade />
+            </Route>
+            <Route path="/farms">
+              <Farms />
+            </Route>
+            <Route path="/pools">
+              <Farms tokenMode />
+            </Route>
+            <Route path="/referrals">
+              <Referrals />
+            </Route>
+
+*/

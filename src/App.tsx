@@ -13,7 +13,6 @@ import PageLoader from './components/PageLoader'
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
 const Referrals = lazy(() => import('./views/Referrals'))
-const Trade = lazy(() => import('./views/Trade'))
 // const Lottery = lazy(() => import('./views/Lottery'))
 // const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
@@ -46,9 +45,6 @@ const App: React.FC = () => {
           <Switch>
             <Route path="/" exact>
               <Home />
-            </Route>
-            <Route path="/trade">
-              <Trade />
             </Route>
             <Route path="/presale">
               <Presale />

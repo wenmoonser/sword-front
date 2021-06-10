@@ -50,6 +50,9 @@ const App: React.FC = () => {
             <Route path="/trade">
               <Trade />
             </Route>
+            <Route path="/presale">
+              <Presale />
+            </Route>
             <Route path="/farms">
               <Farms />
             </Route>
@@ -58,9 +61,6 @@ const App: React.FC = () => {
             </Route>
             <Route path="/referrals">
               <Referrals />
-            </Route>
-            <Route path="/presale">
-              <Presale />
             </Route>
             {/* <Route path="/pools"> */}
             {/*  <Pools /> */}

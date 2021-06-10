@@ -60,13 +60,19 @@ const PresaleCard = styled.div`
 const CountdownText = styled.span`
   font-size: 16px;
   color: #fff;
-  background: #0080FF;
+  background: ${(props) => props.theme.card.background};;
   padding: 16px;
   border-radius: 16px;
   width: 230px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    margin-right: auto;
+    margin-left: 32px;
+    margin-bottom: 32px;
+  }
 `
 
 const Presale: React.FC = () => {
@@ -92,8 +98,8 @@ const Presale: React.FC = () => {
         return (
             <CountdownText>
                 <span>Time till Presale is Over</span>
-                <span style={{ fontSize: '32px' }}>{zeroPad(days * 24 + hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}</span>
-                <span>Hours:Minutes:Seconds</span>
+                <span style={{ fontSize: '32px', paddingTop: '10px', paddingBottom: '5px', color: '#0080FF', fontWeight: 800 }}>{zeroPad(days * 24 + hours)} : {zeroPad(minutes)} : {zeroPad(seconds)}</span>
+                <span>Hours : Minutes : Seconds</span>
             </CountdownText>
         )
     }

@@ -24,7 +24,7 @@ const ClaimAction: React.FC = () => {
   }
 
   return (
-    <Flex justifyContent="space-between" alignItems="center">
+    <Flex justifyContent="space-between" alignItems="center" flexDirection="column">
       You can only claim after presale is over!
       {renderStakingButtons()}
     </Flex>

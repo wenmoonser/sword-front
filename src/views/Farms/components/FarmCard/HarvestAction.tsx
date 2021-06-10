@@ -43,6 +43,15 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
     }
   }, [pid, account, setIsCanHarvest])
 
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      const res = await canHarvest(pid, account)
+      setIsCanHarvest(res)
+    }, 10000);
+
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, [pid, account])
+
   return (
     <Flex mb="8px" justifyContent="space-between" alignItems="center">
       <Heading color={rawEarningsBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance}</Heading>

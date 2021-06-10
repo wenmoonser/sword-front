@@ -8,6 +8,7 @@ import { provider } from 'web3-core'
 import { Image, Heading, Card, CardBody, CardFooter, Flex } from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
+import Countdown, { zeroPad } from 'react-countdown'
 import Page from 'components/layout/Page'
 import { usePresaleData } from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
@@ -30,7 +31,7 @@ const Header = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
   margin: auto;
   padding-top: 20px;
@@ -56,6 +57,18 @@ const PresaleCard = styled.div`
   text-align: center;
 `
 
+const CountdownText = styled.span`
+  font-size: 16px;
+  color: #fff;
+  background: #0080FF;
+  padding: 16px;
+  border-radius: 16px;
+  width: 230px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+`
+
 const Presale: React.FC = () => {
     const { path } = useRouteMatch()
     const TranslateString = useI18n()
@@ -73,7 +86,17 @@ const Presale: React.FC = () => {
         dispatch(fetchTokensLeftDataAsync())
     }, [account, dispatch, slowRefresh])
 
+    const [countdownDate, setCountdownDate] = useState(1623466800000)
 
+    const CountdownTime = ({ days, hours, minutes, seconds, completed }) => {
+        return (
+            <CountdownText>
+                <span>Time till Presale is Over</span>
+                <span style={{ fontSize: '32px' }}>{zeroPad(days * 24 + hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}</span>
+                <span>Hours:Minutes:Seconds</span>
+            </CountdownText>
+        )
+    }
 
     return (
         <Page>
@@ -81,12 +104,7 @@ const Presale: React.FC = () => {
                 <Heading as="h1" size="xl" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
                     Andromeda Presale
                 </Heading>
-                <Heading as="h2" color="secondary" mb="10px" style={{ textAlign: 'center' }}>
-                    Begins: 10 June 1PM GMT
-                </Heading>
-                <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-                    Duration: 36 Hours
-                </Heading>
+                <Countdown date={countdownDate} zeroPadTime={2} renderer={CountdownTime} />
             </Header>
             <div style={{ margin: '32px' }}>
                 <Flex className={styles.cardContainer} justifyContent="space-between">

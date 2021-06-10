@@ -12,7 +12,6 @@ interface TimerModalProps {
   onDismiss?: () => void
   pool: string
   harvestLockup: number
-  currentTimestamp: number
   nextHarvestUntilTimestamp?: any
 }
 
@@ -20,7 +19,7 @@ const TimerModal: React.FC<TimerModalProps> = ({ onDismiss, pool, harvestLockup,
   const TranslateString = useI18n()
   const dispatch = useDispatch()
   const { account }: { account: string } = useWallet()
-  const [countdownDate, setCountdownDate] = useState(Date.now() + 10000)
+  const [countdownDate, setCountdownDate] = useState(Number(nextHarvestUntilTimestamp) * 1000)
 
   const CountdownTime = ({ hours, minutes, seconds, completed }) => {
     return (

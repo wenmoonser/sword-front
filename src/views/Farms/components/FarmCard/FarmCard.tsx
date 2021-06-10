@@ -141,7 +141,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     <TimerModal
       pool={farm.tokenSymbol}
       harvestLockup={farm.harvestLockup}
-      currentTimestamp={Date.now()}
       nextHarvestUntilTimestamp={farm.userData?.nextHarvestUntil}
     />,
   )
@@ -150,7 +149,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     if (farm.userData) {
       const nextHarvestUntilTimestamp = Number(farm.userData.nextHarvestUntil)
       const currentTimestamp = Date.now()
-      setShowTimer(nextHarvestUntilTimestamp !== 0 && currentTimestamp < nextHarvestUntilTimestamp)
+      setShowTimer(nextHarvestUntilTimestamp !== 0 && currentTimestamp < nextHarvestUntilTimestamp * 1000)
     }
   }, [farm])
 

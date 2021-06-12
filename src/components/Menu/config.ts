@@ -45,7 +45,7 @@ const config: MenuEntry[] = [
   {
     label: 'Price Chart',
     icon: 'ChartIcon',
-    href: ''
+    href: 'https://poocoin.app/tokens/0xc4c11d45f3563033ed1e86f6d21c8be6c98017eb'
   },
   {
     label: 'Features',
@@ -78,8 +78,8 @@ const config: MenuEntry[] = [
     icon: 'ListIcon',
     items: [
       {
-        label: 'Coinsniper (comingsoon)',
-        href: ``,
+        label: 'Coinsniper',
+        href: `https://coinsniper.net/coin/3018`,
       },
       {
         label: 'Coinhunt (comingsoon)',

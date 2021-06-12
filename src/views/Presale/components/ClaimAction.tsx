@@ -20,7 +20,7 @@ const ClaimAction: React.FC = () => {
   const { onClaim } = useClaim()
 
   const renderStakingButtons = () => {
-    return <Button fullWidth onClick={onClaim}>Claim</Button>
+    return <Button fullWidth disabled onClick={onClaim}>Claim</Button>
   }
 
   return (

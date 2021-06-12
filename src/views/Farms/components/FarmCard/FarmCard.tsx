@@ -220,6 +220,27 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       )}
       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
       <Divider />
+      <ExpandableSectionButton
+        onClick={() => setShowExpandableSection(!showExpandableSection)}
+        expanded={showExpandableSection}
+      />
+      <ExpandingWrapper expanded={showExpandableSection}>
+        <DetailsSection
+          removed={removed}
+          isTokenOnly={farm.isTokenOnly}
+          bscScanAddress={
+            farm.isTokenOnly
+              ? `https://bscscan.com/token/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              : `https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
+          }
+          totalValueFormated={totalValueFormated}
+          lpLabel={lpLabel}
+          quoteTokenAdresses={quoteTokenAdresses}
+          quoteTokenSymbol={quoteTokenSymbol}
+          tokenAddresses={tokenAddresses}
+        />
+      </ExpandingWrapper>
+
     </FCard>
   )
 }

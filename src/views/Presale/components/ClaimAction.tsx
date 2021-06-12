@@ -20,13 +20,12 @@ const ClaimAction: React.FC = () => {
   const { onClaim } = useClaim()
 
   const renderStakingButtons = () => {
-    return <Button fullWidth disabled onClick={onClaim}>Claim</Button>
+    return <Button fullWidth onClick={onClaim}>Claim</Button>
   }
 
   return (
     <Flex justifyContent="space-between" alignItems="center" flexDirection="column">
       {renderStakingButtons()}
-      <div style={{ paddingTop: '20px' }}>You can only claim after presale is over!</div>
     </Flex>
   )
 }

@@ -118,10 +118,7 @@ const Presale: React.FC = () => {
                         <CardBody>Presale Stats</CardBody>
                         <CardFooter>
                             <div className={styles.flex}>
-                                <div className={styles.item}>Total ADR minted for Presale: <span className={styles.colored}>50000</span></div>
-                                <div className={styles.item}>ADR Left For Presale: <span className={styles.colored}>{Math.round(getBalanceNumber(presale.tokensLeft))}</span></div>
-                                <div className={styles.item}>ADR Price: <span className={styles.colored}>1 BUSD</span></div>
-                                <div className={styles.item}>Max Per Wallet: <span className={styles.colored}>1000 ADR</span></div>
+                                <div className={styles.item}>Presale is Over!</div>
                             </div>
                         </CardFooter>
                     </Card>

@@ -35,18 +35,6 @@ const ReferralCard: React.FC = () => {
 
   return (
     <div>
-      <Flex className={styles.cardContainer} justifyContent="space-between">
-        <Card className={styles.card}>
-          <CardBody>{TranslateString(10008, 'Total Referrals')}</CardBody>
-          <CardFooter>{totalReferrals}</CardFooter>
-        </Card>
-
-        <Card className={styles.card}>
-          <CardBody>{TranslateString(10009, 'Total Referral Commissions')}</CardBody>
-          <CardFooter>{totalReferralCommisions} ADR</CardFooter>
-        </Card>
-      </Flex>
-
       <Card style={{ marginTop: '30px' }}>
         <CardBody>
           <Flex justifyContent="space-between">

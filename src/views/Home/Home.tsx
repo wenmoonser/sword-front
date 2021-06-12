@@ -109,14 +109,6 @@ const Home: React.FC = () => {
     setReferralCode(window.location.search, account)
   }, [account])
 
-  const CountdownTime = ({ hours, minutes, seconds, completed }) => {
-    return (
-      <span>
-        {zeroPad(hours)}h : {zeroPad(minutes)}m : {zeroPad(seconds)}s
-      </span>
-    )
-  }
-
   return (
     <Page>
 
@@ -127,9 +119,11 @@ const Home: React.FC = () => {
         <Text fontSize="15px">
           {TranslateString(578, 'Automatic Liquidity Acquisition Yield Farm on Binance Smart Chain')}
         </Text>
-        <ScrollText fontSize="15px" style={{ marginTop: 'auto', marginBottom: '20px' }}>
-          Scroll down for more
-        </ScrollText>
+        <div style={{ marginTop: 'auto', marginBottom: '20px', width: '100%' }}>
+          <ScrollText fontSize="15px" >
+            Scroll down for more
+          </ScrollText>
+        </div>
       </Hero>
       <div style={{ padding: '32px' }}>
         <Cards>

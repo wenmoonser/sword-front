@@ -92,7 +92,9 @@ const Presale: React.FC = () => {
         dispatch(fetchTokensLeftDataAsync())
     }, [account, dispatch, slowRefresh])
 
-    const [countdownDate, setCountdownDate] = useState(1623466800000)
+
+    // to change the time till presale over using unix timestamp
+    const [countdownDate, setCountdownDate] = useState(1626358457000)
 
     const CountdownTime = ({ days, hours, minutes, seconds, completed }) => {
         return (
@@ -118,7 +120,10 @@ const Presale: React.FC = () => {
                         <CardBody>Presale Stats</CardBody>
                         <CardFooter>
                             <div className={styles.flex}>
-                                <div className={styles.item}>Presale is Over!</div>
+                                <div className={styles.item}>Total TOKENS: 1,000,000,000</div>
+                                <div className={styles.item}>ADR left: <span className={styles.colored}>{getBalanceNumber(presale.tokensLeft)}</span></div>
+                                <div className={styles.item}>Presale Price: $5</div>
+                                <div className={styles.item}>Launch Price: $8</div>
                             </div>
                         </CardFooter>
                     </Card>

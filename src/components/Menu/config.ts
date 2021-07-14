@@ -48,11 +48,6 @@ const config: MenuEntry[] = [
     href: 'https://poocoin.app/tokens/0xc4c11d45f3563033ed1e86f6d21c8be6c98017eb'
   },
   {
-    label: 'Farming Start (8237000)',
-    icon: 'NftIcon',
-    href: 'https://bscscan.com/block/countdown/8237000'
-  },
-  {
     label: 'Features',
     icon: 'FeaturesIcon',
     items: [

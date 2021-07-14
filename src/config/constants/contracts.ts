@@ -1,7 +1,7 @@
 export default {
   cake: {
-    56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
-    97: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
+    56: '0x0a1f8d946d4a8c8f46e0d9b331af63cc3e4a81ee',
+    97: '0x0a1f8d946d4a8c8f46e0d9b331af63cc3e4a81ee',
   },
   masterChef: {
     56: '0x775379E3F10446384536095Ed2681c2240394203',
@@ -32,7 +32,7 @@ export default {
     97: '',
   },
   presale: {
-    56: '0x093734aEEbDC345bC9FA2f0c5Bf11C955661d0BD',
+    56: '0x373F902e13FD28168248FA6d2D9Eac420dEDb650',
     97: '0x954c5582c719d2C758AeD535a32A2f5f950b8aB4',
   }
 }

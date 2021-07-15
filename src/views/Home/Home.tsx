@@ -15,7 +15,7 @@ import AddMartianCard from './components/AddMartianCard'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/egg/header.png');
+  background-image: url('/images/egg/header.gif');
   background-repeat: no-repeat;
   background-position: center bottom;
   display: flex;
@@ -27,7 +27,7 @@ const Hero = styled.div`
   background-size: cover;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/egg/header.png');
+    background-image: url('/images/egg/header.gif');
     background-position: center bottom;
     height: calc(100vh - 64px);
     background-size: cover;
@@ -36,7 +36,7 @@ const Hero = styled.div`
 `
 
 const CustomHeading = styled(Heading)`
-  font-family: 'Bangers', cursive;
+  font-family: 'Bradley Hand', cursive;
 
   ${({ theme }) => theme.mediaQueries.lg} {
     font-size: 128px;
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
 
       <Hero>
         <CustomHeading as="h1" size="xl" mb="10px" style={{ color: '#FF0080', textShadow: '3px 3px 2px #fff' }}>
-          {TranslateString(576, 'Andromeda Finance')}
+          {TranslateString(576, 'Sword Finance')}
         </CustomHeading>
         <Text fontSize="15px">
           {TranslateString(578, 'Automatic Liquidity Acquisition Yield Farm on Binance Smart Chain')}

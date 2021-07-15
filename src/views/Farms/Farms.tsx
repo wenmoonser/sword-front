@@ -24,9 +24,10 @@ export interface FarmsProps {
 
 const Header = styled.div`
   align-items: center;
+  background-size: auto;
   background-image: url('/images/egg/farm_banner.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;

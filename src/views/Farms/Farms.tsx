@@ -24,22 +24,31 @@ export interface FarmsProps {
 
 const Header = styled.div`
   align-items: center;
-  background-size: auto;
   background-image: url('/images/egg/farm_banner.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin: auto;
   padding-top: 20px;
   text-align: center;
-  background-size: cover;
+  
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    height: 60vh;
+    height: 45vh;
   }
   
+`
+const CustomHeading = styled(Heading)`
+  font-family: 'Bradley Hand', cursive;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    font-size: 60px;
+    line-height: 5;
+    
+  }
 `
 
 const Farms: React.FC<FarmsProps> = (farmsProps) => {
@@ -115,11 +124,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   return (
     <Page>
       <Header style={{ textAlign: 'center' }}>
-        <Heading as="h1" size="lg" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
+       <CustomHeading as="h1" size="xl" mb="10px" style={{ color: '#d1c3be', textShadow: '3px 3px 2px #fff' }}>
           {tokenMode
-            ? TranslateString(10002, 'Stake tokens to earn ADR')
-            : TranslateString(320, 'Stake LP tokens to earn ADR')}
-        </Heading>
+            ? TranslateString(10002, 'Stake tokens to earn SWORD')
+            : TranslateString(320, 'Stake LP tokens to earn SWORD')}
+        </CustomHeading>
         <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       </Header>
       <div>

@@ -35,14 +35,6 @@ const Hero = styled.div`
   
 `
 
-const CustomHeading = styled(Heading)`
-  font-family: 'Bradley Hand', cursive;
-
-  ${({ theme }) => theme.mediaQueries.lg} {
-    font-size: 128px;
-  }
-`
-
 const Cards = styled(BaseLayout)`
   align-items: stretch;
   justify-content: stretch;

@@ -33,7 +33,7 @@ const BuyAction: React.FC<BuyActionProps> = ({ busdBalance, tokensUnclaimed, tok
     )
 
     const renderStakingButtons = () => {
-        return <Button fullWidth disabled onClick={onPresentBuy}>Buy</Button>
+        return <Button fullWidth onClick={onPresentBuy}>Buy</Button>
     }
 
     return (

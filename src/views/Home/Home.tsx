@@ -113,12 +113,6 @@ const Home: React.FC = () => {
     <Page>
 
       <Hero>
-        <CustomHeading as="h1" size="xl" mb="10px" style={{ color: '#FF0080', textShadow: '3px 3px 2px #fff' }}>
-          {TranslateString(576, 'Sword Finance')}
-        </CustomHeading>
-        <Text fontSize="15px">
-          {TranslateString(578, 'Automatic Liquidity Acquisition Yield Farm on Binance Smart Chain')}
-        </Text>
         <div style={{ marginTop: 'auto', marginBottom: '20px', width: '100%' }}>
           <ScrollText fontSize="15px" >
             Scroll down for more

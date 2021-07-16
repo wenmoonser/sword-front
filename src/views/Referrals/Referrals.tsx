@@ -10,7 +10,7 @@ import Divider from './components/Divider'
 
 const Header = styled.div`
   align-items: center;
-  background-image: url('/images/egg/referral_banner.png');
+  background-image: url('/images/egg/referral_banner.gif');
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
@@ -35,12 +35,6 @@ const Referrals: React.FC = () => {
       <Header style={{ textAlign: 'center' }}>
         <Heading as="h1" size="lg" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
           {TranslateString(10006, 'Andromeda Referral Program')}
-        </Heading>
-        <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-          {TranslateString(
-            10007,
-            "Share the referral link below to invite your friends and earn 3% of your friends' earnings FOREVER!",
-          )}
         </Heading>
       </Header>
       <Divider />

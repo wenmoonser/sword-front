@@ -24,10 +24,10 @@ export interface FarmsProps {
 
 const Header = styled.div`
   align-items: center;
-  background-image: url('/images/egg/farm_banner.png');
+  background-image: url('/images/egg/farm_banner.gif');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: auto;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -43,6 +43,7 @@ const Header = styled.div`
 `
 const CustomHeading = styled(Heading)`
   font-family: 'Bradley Hand', cursive;
+
 
   ${({ theme }) => theme.mediaQueries.lg} {
     font-size: 60px;
@@ -124,11 +125,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   return (
     <Page>
       <Header style={{ textAlign: 'center' }}>
-       <CustomHeading as="h1" size="xl" mb="10px" style={{ color: '#d1c3be', textShadow: '3px 3px 2px #fff' }}>
-          {tokenMode
-            ? TranslateString(10002, 'Stake tokens to earn SWORD')
-            : TranslateString(320, 'Stake LP tokens to earn SWORD')}
-        </CustomHeading>
         <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       </Header>
       <div>
@@ -145,5 +141,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     </Page>
   )
 }
+
 
 export default Farms

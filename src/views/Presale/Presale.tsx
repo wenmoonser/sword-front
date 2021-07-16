@@ -27,7 +27,7 @@ export interface PresaleProps {
 
 const Header = styled.div`
   align-items: center;
-  background-image: url('/images/egg/presale_banner.png');
+  background-image: url('/images/egg/presale_banner.gif');
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;

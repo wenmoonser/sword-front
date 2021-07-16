@@ -5,12 +5,12 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'ADR-BUSD LP',
+    lpSymbol: 'SWORD-BUSD LP',
     lpAddresses: {
       97: '',
       56: '0x9b06b1b8a05e55311ee79ae0f229e6956800bf2b',
     },
-    tokenSymbol: 'ADR',
+    tokenSymbol: 'SWORD',
     tokenAddresses: {
       97: '',
       56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
@@ -22,12 +22,12 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 5,
-    lpSymbol: 'ADR-BNB LP',
+    lpSymbol: 'SWORD-BNB LP',
     lpAddresses: {
       97: '',
       56: '0x1fa49ed3b6b205cb1f4f5220af26bb301cef2f27',
     },
-    tokenSymbol: 'ADR',
+    tokenSymbol: 'SWORD',
     tokenAddresses: {
       97: '',
       56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
@@ -193,12 +193,12 @@ const farms: FarmConfig[] = [
     pid: 11,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'ADR',
+    lpSymbol: 'SWORD',
     lpAddresses: {
       97: '',
       56: '0x9b06b1b8a05e55311ee79ae0f229e6956800bf2b', // EGG-BUSD LP
     },
-    tokenSymbol: 'ADR',
+    tokenSymbol: 'SWORD',
     tokenAddresses: {
       97: '',
       56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',

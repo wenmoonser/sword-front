@@ -27,7 +27,7 @@ const Header = styled.div`
   background-image: url('/images/egg/farm_banner.gif');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;

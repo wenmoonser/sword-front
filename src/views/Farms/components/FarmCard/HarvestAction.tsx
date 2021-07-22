@@ -5,7 +5,6 @@ import useI18n from 'hooks/useI18n'
 import { useHarvest } from 'hooks/useHarvest'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { getBalanceNumber } from 'utils/formatBalance'
-import { canHarvest } from 'utils/harvest'
 import styled from 'styled-components'
 import useStake from '../../../../hooks/useStake'
 
@@ -27,30 +26,11 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const { onReward } = useHarvest(pid)
   const { onStake } = useStake(pid)
   const { account } = useWallet()
-  const [isCanHarvest, setIsCanHarvest] = useState(false)
+  
 
   const rawEarningsBalance = getBalanceNumber(earnings)
   const displayBalance = rawEarningsBalance.toLocaleString()
 
-  useEffect(() => {
-    const fetchCanHarvest = async () => {
-      const res = await canHarvest(pid, account)
-      setIsCanHarvest(res)
-    }
-
-    if (account) {
-      fetchCanHarvest()
-    }
-  }, [pid, account, setIsCanHarvest])
-
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      const res = await canHarvest(pid, account)
-      setIsCanHarvest(res)
-    }, 10000);
-
-    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-  }, [pid, account])
 
   return (
     <Flex mb="8px" justifyContent="space-between" alignItems="center">
@@ -72,17 +52,11 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
           </Button>
         ) : null}
         <Button
-          disabled={/* rawEarningsBalance === 0 || */ !isCanHarvest || pendingTx}
+          disabled={ rawEarningsBalance === 0 || pendingTx}
           onClick={async () => {
             setPendingTx(true)
 
-            try {
-              await onReward()
-            } catch (err) {
-              // NOTE: This is left blank intentionality
-            } finally {
-              setPendingTx(false)
-            }
+            
           }}
         >
           {TranslateString(999, 'Harvest')}

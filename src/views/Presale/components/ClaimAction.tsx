@@ -26,7 +26,7 @@ const ClaimAction: React.FC = () => {
   return (
     <Flex justifyContent="space-between" alignItems="center" flexDirection="column">
       {renderStakingButtons()}
-      <div style={{ paddingTop: '20px' }}>The period to claim your ADR tokens is over!</div>
+      <div style={{ paddingTop: '20px' }}>Claim Token Period Over</div>
     </Flex>
   )
 }

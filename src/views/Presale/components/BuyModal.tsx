@@ -38,7 +38,7 @@ const BuyModal: React.FC<BuyModalProps> = ({ max, tokenName = "", onConfirm, onD
     const renderErrorMessage = () => {
         let error = null;
         if (parseInt(val) > getBalanceNumber(tokensLeft)) {
-            error = "Not enough ADR left for sale!"
+            error = "Not enough SWORD left for sale!"
         }
         else if (parseInt(val) + getBalanceNumber(tokenBalance) + getBalanceNumber(tokensUnclaimed) > 1000) {
             error = "You have hit the max cap of 1000 BUSD!"

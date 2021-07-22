@@ -1,10 +1,10 @@
 export default {
   cake: {
-    56: '0x0a1f8d946d4a8c8f46e0d9b331af63cc3e4a81ee',
-    97: '0x0a1f8d946d4a8c8f46e0d9b331af63cc3e4a81ee',
+    56: '0x8951711F54aAB7c83Bc4373544880Aad27C3E88E',
+    97: '0x8951711F54aAB7c83Bc4373544880Aad27C3E88E',
   },
   masterChef: {
-    56: '0x775379E3F10446384536095Ed2681c2240394203',
+    56: '0x449f22A3BA6E08F69Bb62B618b76bAfa4Cf8Cee2',
     97: '',
   },
   wbnb: {
@@ -28,11 +28,11 @@ export default {
     97: '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee',
   },
   referral: {
-    56: '0xE8bA3CCA36563d5d0D2577B2C2123CbE357b1d9e',
+    56: '0x64C9d61E40cdd7F307286F6D7E3d32b77eE137b2',
     97: '',
   },
   presale: {
-    56: '0x373F902e13FD28168248FA6d2D9Eac420dEDb650',
+    56: '0xA516B90f24A4BCcb77AC730292412750967C9B32',
     97: '0x954c5582c719d2C758AeD535a32A2f5f950b8aB4',
   }
 }

@@ -34,7 +34,7 @@ const Referrals: React.FC = () => {
     <Page>
       <Header style={{ textAlign: 'center' }}>
         <Heading as="h1" size="lg" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
-          {TranslateString(10006, 'Andromeda Referral Program')}
+          {TranslateString(10006, 'Sword Referral Program')}
         </Heading>
       </Header>
       <Divider />

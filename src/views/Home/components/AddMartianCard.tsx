@@ -148,7 +148,7 @@ const AddMartianCard = () => {
 
     setAddMartianDisabled(true)
 
-    const tokenSymbol = 'ADR'
+    const tokenSymbol = 'SWORD'
     const tokenDecimals = 18
     const tokenImage = `${process.env.REACT_APP_BASE_URL}/images/egg/9.png`
 
@@ -176,7 +176,7 @@ const AddMartianCard = () => {
     <Card>
       <CardBody>
         <Heading size="lg" mb="24px" style={{ textAlign: 'center' }}>
-          {TranslateString(10015, 'Add ADR')}
+          {TranslateString(10015, 'Add SWORD')}
         </Heading>
         <div style={{ textAlign: 'center' }}>
           <AddMartianIcon src="/images/add_martian.png" alt="add logo" />
@@ -208,14 +208,14 @@ const AddMartianCard = () => {
         <ActionsButtonWrapper>
           <div>
             <Button variant="primary" disabled={addMartianDisabled} onClick={handleAddMartian}>
-              {TranslateString(10017, 'Add $ADR to')}&nbsp;
+              {TranslateString(10017, 'Add $SWORD to')}&nbsp;
               <ButtonIcon src="/images/metamask.png" alt="metamask logo" />
             </Button>
           </div>
           <BuyWrapper style={{ textAlign: 'center' }}>
             <Link external href={`https://exchange.pancakeswap.finance/#/swap?outputCurrency=${tokenAddress}`}>
               <Button variant="primary">
-                {TranslateString(10018, 'Buy $ADR token')}&nbsp;
+                {TranslateString(10018, 'Buy $SWORD token')}&nbsp;
                 <ButtonIcon src="/images/pancake.png" alt="pancake logo" />
               </Button>
             </Link>

@@ -110,7 +110,7 @@ const Presale: React.FC = () => {
         <Page>
             <Header style={{ textAlign: 'center' }}>
                 <Heading as="h1" size="xl" color="primary" mb="10px" mt="10px" style={{ textAlign: 'center' }}>
-                    Andromeda Presale
+                    Sword Presale
                 </Heading>
                 <Countdown date={countdownDate} zeroPadTime={2} renderer={CountdownTime} />
             </Header>
@@ -121,18 +121,18 @@ const Presale: React.FC = () => {
                         <CardFooter>
                             <div className={styles.flex}>
                                 <div className={styles.item}>Total TOKENS: 1,000,000,000</div>
-                                <div className={styles.item}>ADR left: <span className={styles.colored}>{getBalanceNumber(presale.tokensLeft)}</span></div>
+                                <div className={styles.item}>SWORD left: <span className={styles.colored}>{getBalanceNumber(presale.tokensLeft)}</span></div>
                                 <div className={styles.item}>Presale Price: $5</div>
                                 <div className={styles.item}>Launch Price: $8</div>
                             </div>
                         </CardFooter>
                     </Card>
                     <Card className={styles.card}>
-                        <CardBody>Your ADR Stats</CardBody>
+                        <CardBody>Your SWORD Stats</CardBody>
                         <CardFooter>{!account ? <UnlockButton mt="8px" fullWidth /> :
                             <div className={styles.flex}>
-                                <div className={styles.item}>ADR you have unclaimed: <span className={styles.colored}>{getBalanceNumber(presale.tokensUnclaimed)}</span></div>
-                                <div className={styles.item}>ADR you have in wallet: <span className={styles.colored}>{getBalanceNumber(presale.cakeBalance)}</span></div>
+                                <div className={styles.item}>SWORD you have unclaimed: <span className={styles.colored}>{getBalanceNumber(presale.tokensUnclaimed)}</span></div>
+                                <div className={styles.item}>SWORD you have in wallet: <span className={styles.colored}>{getBalanceNumber(presale.cakeBalance)}</span></div>
                             </div>
                         }</CardFooter>
                     </Card>

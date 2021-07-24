@@ -47,7 +47,7 @@ const BuyCard: React.FC<BuyCardProps> = ({ account, ethereum, allowance, busdBal
         return isApproved ? (
             <BuyAction busdBalance={busdBalance} tokensUnclaimed={tokensUnclaimed} tokenBalance={tokenBalance} tokensLeft={tokensLeft} />
         ) : (
-            <Button mt="8px" fullWidth disabled onClick={handleApprove}>
+            <Button mt="8px" fullWidth onClick={handleApprove}>
                 {TranslateString(999, 'Approve Contract')}
             </Button>
         )

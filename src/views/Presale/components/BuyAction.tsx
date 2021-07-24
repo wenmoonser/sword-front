@@ -39,9 +39,12 @@ const BuyAction: React.FC<BuyActionProps> = ({ busdBalance, tokensUnclaimed, tok
     return (
         <Flex justifyContent="space-between" alignItems="center" flexDirection="column">
             {renderStakingButtons()}
-            <div style={{ paddingTop: '20px' }}>Presale is over! To buy, head over to <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB" style={{ textDecoration: 'underline', fontWeight: 700 }}>Pancake Swap</a>!</div>
+            <div style={{ paddingTop: '20px' }}>Presale is on</div>
         </Flex>
     )
 }
 
 export default BuyAction
+
+// Replace line 42 after presale ends
+// <div style={{ paddingTop: '20px' }}>Presale is over! To buy, head over to <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB" style={{ textDecoration: 'underline', fontWeight: 700 }}>Pancake Swap</a>!</div>

@@ -94,7 +94,7 @@ const Presale: React.FC = () => {
 
 
     // to change the time till presale over using unix timestamp
-    const [countdownDate, setCountdownDate] = useState(1626358457000)
+    const [countdownDate, setCountdownDate] = useState(1627959600000)
 
     const CountdownTime = ({ days, hours, minutes, seconds, completed }) => {
         return (

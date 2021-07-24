@@ -35,16 +35,18 @@ const BuyModal: React.FC<BuyModalProps> = ({ max, tokenName = "", onConfirm, onD
         setVal(fullBalance)
     }, [fullBalance, setVal])
 
+    // need to change here for presale minimum and maximum buys
+    
     const renderErrorMessage = () => {
         let error = null;
         if (parseInt(val) > getBalanceNumber(tokensLeft)) {
             error = "Not enough SWORD left for sale!"
         }
-        else if (parseInt(val) + getBalanceNumber(tokenBalance) + getBalanceNumber(tokensUnclaimed) > 1000) {
-            error = "You have hit the max cap of 1000 BUSD!"
+        else if (parseInt(val) + getBalanceNumber(tokenBalance) + getBalanceNumber(tokensUnclaimed) > 3000) {
+            error = "You have hit the max cap of 3000 BUSD!"
         }
-        else if (parseInt(val) < 10) {
-            error = "Minimum buy is 10 BUSD!"
+        else if (parseInt(val) < 5) {
+            error = "Minimum buy is 5 BUSD!"
         }
         return error
     }

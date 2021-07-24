@@ -120,7 +120,7 @@ const Presale: React.FC = () => {
                         <CardBody>Presale Stats</CardBody>
                         <CardFooter>
                             <div className={styles.flex}>
-                                <div className={styles.item}>Total TOKENS: 1,000,000,000</div>
+                                <div className={styles.item}>Total SWORD for Presale: 40,000</div>
                                 <div className={styles.item}>SWORD left: <span className={styles.colored}>{getBalanceNumber(presale.tokensLeft)}</span></div>
                                 <div className={styles.item}>Presale Price: $5</div>
                                 <div className={styles.item}>Launch Price: $8</div>

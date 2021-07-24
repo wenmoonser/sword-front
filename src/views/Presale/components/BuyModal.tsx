@@ -66,7 +66,7 @@ const BuyModal: React.FC<BuyModalProps> = ({ max, tokenName = "", onConfirm, onD
                     {TranslateString(462, 'Cancel')}
                 </Button>
                 <Button
-                    disabled={parseInt(val) > getBalanceNumber(tokensLeft) || parseInt(val) + getBalanceNumber(tokenBalance) + getBalanceNumber(tokensUnclaimed) > 1000 || parseInt(val) < 10 || pendingTx}
+                    disabled={parseInt(val) > getBalanceNumber(tokensLeft) || parseInt(val) + getBalanceNumber(tokenBalance) + getBalanceNumber(tokensUnclaimed) > 3000 || parseInt(val) < 5 || pendingTx}
                     onClick={async () => {
                         setPendingTx(true)
                         await onConfirm(val)
@@ -82,3 +82,5 @@ const BuyModal: React.FC<BuyModalProps> = ({ max, tokenName = "", onConfirm, onD
 }
 
 export default BuyModal
+
+// need to change line 69 also to disable when the minimum and maximum buys are met

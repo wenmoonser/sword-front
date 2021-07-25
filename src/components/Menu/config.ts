@@ -109,15 +109,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/andromedafinance',
+        href: 'https://github.com/SwordFinance/contract',
       },
       {
         label: 'Docs',
-        href: 'https://andromedadefi.gitbook.io/andromeda-finance/',
-      },
-      {
-        label: 'Blog',
-        href: 'https://andromedadefi.medium.com/',
+        href: 'https://financesword.gitbook.io/sword-finance/',
       },
     ],
   },

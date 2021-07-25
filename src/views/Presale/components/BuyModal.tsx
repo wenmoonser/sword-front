@@ -60,7 +60,7 @@ const BuyModal: React.FC<BuyModalProps> = ({ max, tokenName = "", onConfirm, onD
                     {TranslateString(462, 'Cancel')}
                 </Button>
                 <Button
-                    disabled={parseInt(val) > getBalanceNumber(tokensLeft) || parseInt(val) + getBalanceNumber(tokenBalance) + getBalanceNumber(tokensUnclaimed) > 3000 || parseInt(val) < 5 || pendingTx}
+                    disabled={parseInt(val) > getBalanceNumber(tokensLeft) || parseInt(val) < 5 || pendingTx}
                     onClick={async () => {
                         setPendingTx(true)
                         await onConfirm(val)

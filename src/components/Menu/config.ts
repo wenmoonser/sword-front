@@ -14,7 +14,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
+        href: 'https://exchange.pancakeswap.finance/#',
       },
       {
         label: 'Liquidity',
@@ -45,33 +45,7 @@ const config: MenuEntry[] = [
   {
     label: 'Price Chart',
     icon: 'ChartIcon',
-    href: 'https://poocoin.app/tokens/0xc4c11d45f3563033ed1e86f6d21c8be6c98017eb'
-  },
-  {
-    label: 'Features',
-    icon: 'FeaturesIcon',
-    items: [
-      {
-        label: 'Transfer Tax',
-        href: '',
-      },
-      {
-        label: 'Auto Burn',
-        href: '',
-      },
-      {
-        label: 'Auto LP',
-        href: '',
-      },
-      {
-        label: 'Harvesting Time Lock',
-        href: '',
-      },
-      {
-        label: 'Anti Whale Measures',
-        href: '',
-      },
-    ],
+    href: 'https://poocoin.app/'
   },
   {
     label: 'Listings',
@@ -79,7 +53,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Coinsniper',
-        href: `https://coinsniper.net/coin/3018`,
+        href: `https://coinsniper.net/`,
       },
       {
         label: 'Coinhunt (comingsoon)',

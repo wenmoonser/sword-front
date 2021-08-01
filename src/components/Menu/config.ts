@@ -23,11 +23,6 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Presale',
-    icon: 'TicketIcon',
-    href: '/presale',
-  },
-  {
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',
@@ -56,23 +51,11 @@ const config: MenuEntry[] = [
         href: `https://coinsniper.net/`,
       },
       {
-        label: 'Coinhunt (comingsoon)',
-        href: ``,
-      },
-      {
-        label: 'PooCoin (comingsoon)',
-        href: ``,
-      },
-      {
-        label: 'DappRadar (comingsoon)',
+        label: 'Ape O Clock',
         href: '',
       },
       {
-        label: 'CoinMarketCap (comingsoon)',
-        href: '',
-      },
-      {
-        label: 'CoinGecko (comingsoon)',
+        label: 'DappRadar',
         href: '',
       },
     ],

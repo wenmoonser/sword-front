@@ -64,7 +64,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
         depositFeeBP={depositFeeBP}
       />
     ) : (
-      <Button mt="8px" fullWidth disabled={requestedApproval} onClick={handleApprove}>
+      <Button mt="8px" fullWidth>
         {TranslateString(999, 'Approve Contract')}
       </Button>
     )
@@ -98,3 +98,5 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
 export default CardActions
 
 // disabled={requestedApproval}
+
+// to change after farm launch. Add disabled={requestedApproval} onClick={handleApprove} to line 67 after fullWidth

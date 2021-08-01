@@ -127,7 +127,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     : '-'
 
   const lpLabel = farm.lpSymbol
-  const earnLabel = 'ADR'
+  const earnLabel = 'SWORD'
   const farmAPY =
     farm.apy &&
     farm.apy.times(new BigNumber(100)).toNumber().toLocaleString(undefined, {
@@ -194,23 +194,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text>{TranslateString(10001, 'Deposit Fee')}:</Text>
         <Text bold>{farm.depositFeeBP / 100}%</Text>
       </Flex>
-      <Flex justifyContent="space-between">
-        <Text>
-          {TranslateString(10012, 'Harvest Lockup')}:
-          <span data-tip data-for="harvestLockup">
-            &nbsp;
-            <HelpIcon color="primary" style={{ width: '13px', height: 'auto' }} />
-          </span>
-          <ReactTooltip id="harvestLockup" place="right" type="dark" effect="float">
-            <Text fontSize="17px" color="primary">
-              {TranslateString(10013, 'How soon you can harvest or compound again.')}
-            </Text>
-          </ReactTooltip>
-        </Text>
-        <Text bold>
-          {farm.harvestLockup} {TranslateString(10014, 'Hour(s)')}
-        </Text>
-      </Flex>
+
       {showTimer && (
         <Flex justifyContent="flex-end" marginTop="10px">
           <TimerIconWrapper>
@@ -220,32 +204,15 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       )}
       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
       <Divider />
-      <ExpandableSectionButton
-        onClick={() => setShowExpandableSection(!showExpandableSection)}
-        expanded={showExpandableSection}
-      />
-      <ExpandingWrapper expanded={showExpandableSection}>
-        <DetailsSection
-          removed={removed}
-          isTokenOnly={farm.isTokenOnly}
-          bscScanAddress={
-            farm.isTokenOnly
-              ? `https://bscscan.com/token/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
-              : `https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
-          }
-          totalValueFormated={totalValueFormated}
-          lpLabel={lpLabel}
-          quoteTokenAdresses={quoteTokenAdresses}
-          quoteTokenSymbol={quoteTokenSymbol}
-          tokenAddresses={tokenAddresses}
-        />
-      </ExpandingWrapper>
+      
 
     </FCard>
   )
 }
 
 export default FarmCard
+
+// to change after fair launch paste on line 207
 
 /*
 

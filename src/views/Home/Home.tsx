@@ -12,6 +12,7 @@ import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
 import AddMartianCard from './components/AddMartianCard'
+import Information from './components/Information'
 
 const Hero = styled.div`
   align-items: center;
@@ -117,6 +118,8 @@ const Home: React.FC = () => {
             
             
             <FarmStakingCard />
+            <br />
+            <Information />
           </CardBody>
           <CardBody style={{ padding: 0 }}>
             <CakeStats />

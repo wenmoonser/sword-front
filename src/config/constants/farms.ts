@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SWORD-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x9b06b1b8a05e55311ee79ae0f229e6956800bf2b',
+      56: '0x1c90fca09CF5c692013817C7C93625673ac7408D',
     },
     tokenSymbol: 'SWORD',
     tokenAddresses: {
       97: '',
-      56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
+      56: '0x0a9ba9adBcA7c0F90796536BbD4273ba99eA83aA',
     },
     harvestLockup: 3,
     quoteTokenSymbol: QuoteToken.BUSD,
@@ -25,12 +25,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SWORD-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x1fa49ed3b6b205cb1f4f5220af26bb301cef2f27',
+      56: '0xa32345da120073DF19A8061D20D26F6E075fffC5',
     },
     tokenSymbol: 'SWORD',
     tokenAddresses: {
       97: '',
-      56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
+      56: '0x0a9ba9adBcA7c0F90796536BbD4273ba99eA83aA',
     },
     harvestLockup: 3,
     quoteTokenSymbol: QuoteToken.BNB,
@@ -196,12 +196,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SWORD',
     lpAddresses: {
       97: '',
-      56: '0x9b06b1b8a05e55311ee79ae0f229e6956800bf2b', // EGG-BUSD LP
+      56: '0x1c90fca09CF5c692013817C7C93625673ac7408D', // EGG-BUSD LP
     },
     tokenSymbol: 'SWORD',
     tokenAddresses: {
       97: '',
-      56: '0xC4C11d45f3563033Ed1e86f6d21C8BE6C98017eB',
+      56: '0x0a9ba9adBcA7c0F90796536BbD4273ba99eA83aA',
     },
     harvestLockup: 3,
     quoteTokenSymbol: QuoteToken.BUSD,
@@ -214,7 +214,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0x9b06b1b8a05e55311ee79ae0f229e6956800bf2b', // EGG-BUSD LP (BUSD-BUSD will ignore)
+      56: '0x1c90fca09CF5c692013817C7C93625673ac7408D', // EGG-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {

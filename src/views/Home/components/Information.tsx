@@ -23,7 +23,7 @@ const Row = styled.div`
   display: flex;
   font-size: 18px;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 `
 
 // toChange

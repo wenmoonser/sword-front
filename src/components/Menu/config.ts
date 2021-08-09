@@ -14,11 +14,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#',
+        href: 'https://pancakeswap.finance/swap#/swap?outputCurrency=0x0a9ba9adBcA7c0F90796536BbD4273ba99eA83aA',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'https://pancakeswap.finance/liquidity',
       },
     ],
   },
@@ -40,7 +40,7 @@ const config: MenuEntry[] = [
   {
     label: 'Price Chart',
     icon: 'ChartIcon',
-    href: 'https://poocoin.app/'
+    href: 'https://poocoin.app/tokens/0x0a9ba9adbca7c0f90796536bbd4273ba99ea83aa'
   },
   {
     label: 'Listings',
@@ -48,7 +48,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Coinsniper',
-        href: `https://coinsniper.net/`,
+        href: `https://coinsniper.net/coin/10434`,
       },
       {
         label: 'Ape O Clock',

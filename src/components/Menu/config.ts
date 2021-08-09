@@ -52,7 +52,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Ape O Clock',
-        href: '',
+        href: 'https://www.apeoclock.com/launch/sword-finance-fair-launch/',
       },
       {
         label: 'DappRadar',

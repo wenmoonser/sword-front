@@ -115,8 +115,8 @@ const Home: React.FC = () => {
       <div style={{ padding: '32px' }}>
         <Cards>
           <CardBody style={{ padding: 0 }}>
-            
-            
+            <AddMartianCard />
+            <br />
             <FarmStakingCard />
             <br />
             <Information />
@@ -136,4 +136,4 @@ const Home: React.FC = () => {
 
 export default Home
 
-// add <AddMartianCard /> after line 116
+// to change add <AddMartianCard /> after line 116

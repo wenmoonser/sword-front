@@ -5,7 +5,7 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'SWORD-BUSD LP',
+    lpSymbol: 'SWORD-USDT LP',
     lpAddresses: {
       97: '',
       56: '0x1c90fca09CF5c692013817C7C93625673ac7408D',

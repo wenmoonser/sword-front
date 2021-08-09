@@ -55,8 +55,8 @@ const config: MenuEntry[] = [
         href: 'https://www.apeoclock.com/launch/sword-finance-fair-launch/',
       },
       {
-        label: 'DappRadar',
-        href: '',
+        label: 'JagoSafer',
+        href: 'https://jagosafer.io/sword-finance',
       },
     ],
   },

@@ -77,11 +77,13 @@ const fetchFarms = async () => {
         const quoteTokenAmount = new BigNumber(quoteTokenBlanceLP)
           .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(lpTokenRatio)
-
+console.log(farmConfig.pid)
+console.log(quoteTokenBlanceLP)
+console.log(tokenBalanceLP)
         if (tokenAmount.comparedTo(0) > 0) {
           tokenPriceVsQuote = quoteTokenAmount.div(tokenAmount)
         } else {
-          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP))
+          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP)) 
         }
       }
 
@@ -103,7 +105,6 @@ const fetchFarms = async () => {
 
       const allocPoint = new BigNumber(info.allocPoint._hex)
       const poolWeight = allocPoint.div(new BigNumber(totalAllocPoint))
-
       return {
         ...farmConfig,
         tokenAmount: tokenAmount.toJSON(),

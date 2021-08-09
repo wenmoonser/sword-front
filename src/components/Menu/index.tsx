@@ -11,7 +11,7 @@ const Menu = (props) => {
   const { account, connect, reset } = useWallet()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const cakePriceUsd = usePriceCakeBusd()
-
+console.log(cakePriceUsd)
   return (
     <UikitMenu
       account={account}

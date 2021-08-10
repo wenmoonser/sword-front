@@ -204,8 +204,8 @@ const farms: FarmConfig[] = [
       56: '0x0a9ba9adBcA7c0F90796536BbD4273ba99eA83aA',
     },
     harvestLockup: 3,
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.USDT,
+    quoteTokenAdresses: contracts.usdt,
   },
   {
     pid: 12,

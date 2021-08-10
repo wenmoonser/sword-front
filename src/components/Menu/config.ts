@@ -47,16 +47,24 @@ const config: MenuEntry[] = [
     icon: 'ListIcon',
     items: [
       {
+        label: 'Rugdoc',
+        href: `https://rugdoc.io/project/sword-finance/`,
+      },
+      {
+        label: 'JagoSafer',
+        href: 'https://jagosafer.io/sword-finance',
+      },
+      {
+        label: 'Dappradar',
+        href: `https://dappradar.com/binance-smart-chain/defi/sword-finance`,
+      },
+      {
         label: 'Coinsniper',
         href: `https://coinsniper.net/coin/10434`,
       },
       {
         label: 'Ape O Clock',
         href: 'https://www.apeoclock.com/launch/sword-finance-fair-launch/',
-      },
-      {
-        label: 'JagoSafer',
-        href: 'https://jagosafer.io/sword-finance',
       },
     ],
   },

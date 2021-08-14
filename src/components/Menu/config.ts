@@ -33,6 +33,11 @@ const config: MenuEntry[] = [
     href: '/pools',
   },
   {
+    label: 'LAYERED FARMING (SWORD)',
+    icon: 'HamburgerIcon',
+    href: '/',
+  },
+  {
     label: 'Referrals',
     icon: 'ReferralsIcon',
     href: '/referrals',

@@ -35,7 +35,7 @@ const config: MenuEntry[] = [
   {
     label: 'LAYERED FARMING (SWORD)',
     icon: 'HamburgerIcon',
-    href: '/',
+    href: 'https://www.sword-layer2-shield.com',
   },
   {
     label: 'Referrals',

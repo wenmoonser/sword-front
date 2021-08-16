@@ -33,7 +33,7 @@ const config: MenuEntry[] = [
     href: '/pools',
   },
   {
-    label: 'LAYERED FARMING (SWORD)',
+    label: 'LAYERED FARMING (SHIELD)',
     icon: 'HamburgerIcon',
     href: 'https://www.sword-layer2-shield.com',
   },
